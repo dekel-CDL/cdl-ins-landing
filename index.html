@@ -123,31 +123,37 @@
         <span class="hint">מלא את הפרטים, נבצע בדיקה מיידית ונחזור אליך להשלמה</span>
 
         <!-- FORM -->
-        <form id="lead-form" action="https://formspree.io/f/mblzqwgy" method="POST" novalidate>
-          <label for="name">שם מלא</label>
-          <input id="name" name="name" type="text" placeholder="שם פרטי ומשפחה" required />
-          <div class="error" id="err-name">אנא מלא שם מלא</div>
+        <form id="lead-form" 
+      action="https://formspree.io/f/mblzqwgy" 
+      method="POST" 
+      target="_self" 
+      novalidate>
+  
+  <label for="name">שם מלא</label>
+  <input id="name" name="name" type="text" placeholder="שם פרטי ומשפחה" required />
+  <div class="error" id="err-name">אנא מלא שם מלא</div>
 
-          <label for="tz">תעודת זהות</label>
-          <input id="tz" name="tz" type="text" inputmode="numeric" pattern="[0-9]{5,10}" placeholder="ספרות בלבד" required />
-          <div class="error" id="err-tz">אנא מלא תעודת זהות תקינה</div>
+  <label for="tz">תעודת זהות</label>
+  <input id="tz" name="tz" type="text" inputmode="numeric" pattern="[0-9]{5,10}" placeholder="ספרות בלבד" required />
+  <div class="error" id="err-tz">אנא מלא תעודת זהות תקינה</div>
 
-          <div class="row">
-            <div>
-              <label for="dob">תאריך לידה</label>
-              <input id="dob" name="dob" type="date" required />
-              <div class="error" id="err-dob">אנא בחר תאריך לידה</div>
-            </div>
-            <div>
-              <label for="issue">תאריך הנפקה</label>
-              <input id="issue" name="issue" type="date" required />
-              <div class="error" id="err-issue">אנא בחר תאריך הנפקה</div>
-            </div>
-          </div>
+  <div class="row">
+    <div>
+      <label for="dob">תאריך לידה</label>
+      <input id="dob" name="dob" type="date" required />
+      <div class="error" id="err-dob">אנא בחר תאריך לידה</div>
+    </div>
+    <div>
+      <label for="issue">תאריך הנפקה</label>
+      <input id="issue" name="issue" type="date" required />
+      <div class="error" id="err-issue">אנא בחר תאריך הנפקה</div>
+    </div>
+  </div>
 
-          <button type="submit">שלח לבדיקה</button>
-          <div class="footnote">הנתונים נשלחים בצורה מאובטחת. ניצור קשר בהקדם.</div>
-        </form>
+  <button type="submit">שלח לבדיקה</button>
+  <div class="footnote">הנתונים נשלחים בצורה מאובטחת. ניצור קשר בהקדם.</div>
+</form>
+
       </div>
     </div>
   </div>
